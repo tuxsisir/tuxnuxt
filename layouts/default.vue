@@ -1,12 +1,16 @@
 <template>
   <div>
-    <div>My blog navigation bar here</div>
-    <Nuxt />
-    <div>footer</div>
+    <div class="container mx-auto">
+      <app-header />
+      <Nuxt />
+    </div>
   </div>
 </template>
 <script>
+import AppHeader from '@/components/Header'
+
 export default {
-  name: 'DefaultLayout'
+  name: 'DefaultLayout',
+  components: { AppHeader }
 }
 </script>
