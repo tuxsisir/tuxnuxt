@@ -2,7 +2,13 @@ module.exports = {
   theme: {
     extend: {
       container: {
-        padding: '18rem'
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          md: '12rem',
+          lg: '13rem',
+          xl: '13rem'
+        }
       }
     }
   },
@@ -15,5 +21,5 @@ module.exports = {
       typography: ['responsive', 'dark']
     }
   },
-  plugins: [require("@tailwindcss/typography")]
+  plugins: [require('@tailwindcss/typography')]
 }
