@@ -1,10 +1,13 @@
 <template>
-  <header class="flex justify-between items-center">
+  <header class="flex justify-between items-center site-header">
     <div>
-      <h1 class="my-3">
-        tuxsisir
+      <h1 class="my-3 text-3xl">
+        <nuxt-link to="/" class="text-blue-500">
+          tuxsisir
+        </nuxt-link>
       </h1>
     </div>
+    <hr>
     <div>
       <a
         class="float-right mx-2 text-gray-700"
@@ -32,3 +35,13 @@ export default {
   name: 'AppHeader'
 }
 </script>
+<style>
+.site-header {
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding: 1rem .5rem;
+  border-bottom: 2px solid #efefef;
+  margin-bottom: .5rem;
+}
+</style>
