@@ -7,13 +7,12 @@
 
       <p class="mb-3 font-mono subpixel-antialiased leading-relaxed">
         You can call me <span class="font-bold">Sisir</span>, I am Software Developer currently
-        based in Greater Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
+        based in Metro Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
       </p>
       <p class="font-mono subpixel-antialiased leading-relaxed">
         This is where I may put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
         If you want to know more about me, <nuxt-link class="text-blue-500" to="/">
-          click here
-        </nuxt-link>.
+          click here</nuxt-link>.
       </p>
       <!--
       <img
@@ -28,7 +27,7 @@
         { Tags }
       </div>
       <div class="mb-3">
-        =====
+        ======
       </div>
       <div class="mb-5 text-center">
         <span
@@ -45,7 +44,7 @@
         { Self Notes }
       </div>
       <div class="mb-3">
-        =========
+        ===========
       </div>
       <div v-for="(article, key) in allArticles" :key="key">
         <div class="flex">
