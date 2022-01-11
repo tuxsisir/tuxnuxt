@@ -5,14 +5,16 @@
         Hi, Thank you for reaching out here.
       </p>
 
-      <p class="mb-3 font-mono subpixel-antialiased leading-relaxed">
-        You can call me <span class="font-bold">Sisir</span>, I am Software Developer currently
+      <p class="mb-3 font-mono subpixel-antialiased leading-relaxed text-justify">
+        I am <span class="font-bold">Sisir</span>, I am Software Developer currently
         based in Metro Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
       </p>
-      <p class="font-mono subpixel-antialiased leading-relaxed">
+      <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
         This is where I may put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
-        If you want to know more about me, <nuxt-link class="text-blue-500" to="/">
-          click here</nuxt-link>.
+        If you want to know more about me,
+        <nuxt-link class="text-blue-500" to="/">
+          click here
+        </nuxt-link>.
       </p>
       <!--
       <img

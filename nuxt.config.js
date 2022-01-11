@@ -4,10 +4,13 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/tuxnuxt/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'tuxnuxt',
+    title: 'tuxsisir | Sisir Ghimire Chettri',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,7 +29,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/fontawesome.js'
+    { src: '~/plugins/fontawesome.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -72,6 +75,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    analyze: false
   },
   googleAnalytics: {
     id: 'UA-170620000-1'

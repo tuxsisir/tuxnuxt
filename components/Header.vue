@@ -13,19 +13,19 @@
         class="float-right mx-2 text-gray-700"
         href="mailto:samratsisir294@gmail.com"
       >
-        <FontAwesomeIcon icon="fa-envelope" class-name="text-lg" />
+        <font-awesome-icon :icon="['fa', 'envelope']" class="text-xl" />
       </a>
       <a
         class="float-right mx-2 text-gray-700"
         href="https://linkedin.com/in/sisir-ghimire-chettri"
       >
-        <FontAwesomeIcon :icon="['fab', 'linkedin']" class-name="text-lg" />
+        <font-awesome-icon :icon="['fab', 'linkedin']" class="text-xl" />
       </a>
       <a
         class="float-right mx-2 text-gray-700"
         href="https://github.com/tuxsisir"
       >
-        <font-awesome-icon :icon="['fab', 'github']" class-name="text-lg" />
+        <font-awesome-icon :icon="['fab', 'github']" class="text-xl" />
       </a>
     </div>
   </header>
@@ -43,5 +43,18 @@ export default {
   padding: 1rem .5rem;
   border-bottom: 2px solid #efefef;
   margin-bottom: .5rem;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
 }
 </style>

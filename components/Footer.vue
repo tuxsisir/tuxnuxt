@@ -1,10 +1,13 @@
 <template>
   <div>
     <div class="site-footer">
-      Designed By Sisir Ghimire Chettri
-      ~ Copyleft SGC <span class="copyleft">&copy;</span> {{ currentYear }} ~
-      Built with <a href="https://nuxtjs.org/" class="hover:text-underline text-blue-500" target="_blank">Nuxt</a>,
-      <a href="https://tailwindcss.com/" class="text-blue-500" target="_blank">Tailwind CSS</a>
+      Copyleft SGC <span class="copyleft">&copy;</span> {{ currentYear }} ~
+      Built with <a href="https://nuxtjs.org/" class="hover:underline" target="_blank">NuxtJS</a>,
+      <a href="https://tailwindcss.com/" class="hover:underline" target="_blank">Tailwind CSS</a>, <a
+        href="https://pages.github.com/"
+        class="hover:underline"
+        target="_blank"
+      >Github Pages</a>
     </div>
   </div>
 </template>
