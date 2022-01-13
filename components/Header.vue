@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-between items-center site-header">
     <div>
-      <h1 class="my-3 text-3xl">
+      <h1 class="my-3 text-3xl font-thin">
         <nuxt-link to="/" class="text-blue-500">
           tuxsisir
         </nuxt-link>

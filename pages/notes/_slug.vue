@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-8">
     <div class="col-span-2">
-      <h3 class="mt-8 font-bold">
+      <h3 class="font-bold mt-3">
         Table of Contents
       </h3>
       <div v-if="post.toc.length > 0">
@@ -15,6 +15,11 @@
     </div>
     <div class="col-span-6">
       <article class="prose max-w-none">
+        <h3 class="article-heading font-bold">
+          {{ post.title }}
+        </h3>
+        <span> {{ formatDate(post.date) }}</span> | <span>{{ post.title }}</span>
+        <hr class="custom-hr">
         <nuxt-content :document="post" />
       </article>
     </div>
@@ -36,6 +41,19 @@ export default {
       prev,
       next
     }
+  },
+  methods: {
+    formatDate (date) {
+      return new Date(date).toISOString().slice(0, 10)
+    }
   }
 }
 </script>
+<style>
+.custom-hr {
+  margin: 0.4rem 0px !important;
+}
+.article-heading {
+  margin: 0.75rem 0 0 0 !important;
+}
+</style>

@@ -1,13 +1,18 @@
 <template>
   <div>
+    <div class="grid grid-cols-6 gap-4">
+      <div class="col-start-2 col-span-4">
+        <tux-alert show-alert />
+      </div>
+    </div>
+
     <div class="p-3 mb-3 text-justify">
-      <p class="font-mono subpixel-antialiased leading-relaxed">
+      <p class="font-mono subpixel-antialiased leading-relaxed mb-3">
         Hi, Thank you for reaching out here.
       </p>
-
       <p class="mb-3 font-mono subpixel-antialiased leading-relaxed text-justify">
-      I am <span class="font-bold">Sisir</span>, <span class="tux-underline">Software Developer</span> currently
-        based in Metro Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
+        I am <span class="font-bold">Sisir</span>, <span class="tux-underline">Software Developer</span> currently
+        based in Metro Vancouver, BC  &#127462; originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
       </p>
       <p class="font-mono subpixel-antialiased leading-relaxed text-justify mb-3">
         This is where I may put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
@@ -28,6 +33,22 @@
       -->
     </div>
     <div class="px-3">
+      <div class="font-bold mb-0">
+        { Links }
+      </div>
+      <div class="mb-3">
+        ======
+      </div>
+      <div class="mb-5">
+        <span
+          v-for="(link, linkKey) in links"
+          :key="`link.name` + linkKey"
+          class="py-1 px-2 rounded text-blue-500 last:mr-0 mr-1 mb-2"
+        >
+          <nuxt-link v-if="!link.external" :to="`/` + link.to">{{ link.name }}</nuxt-link>
+          <a v-else :href="link.to" target="_blank">{{ link.name }}</a>
+        </span>
+      </div>
       <div class="font-bold mb-0">
         { Tags }
       </div>
@@ -68,9 +89,11 @@
 </template>
 
 <script>
+import TuxAlert from '@/components/TuxAlert'
 
 export default {
   name: 'IndexPage',
+  components: { TuxAlert },
   async asyncData ({ $content, params }) {
     const allArticles = await $content('notes').sortBy('date', 'desc').fetch()
     const tags = await $content('notes').sortBy('date', 'desc').only(['tags']).fetch()
@@ -80,6 +103,19 @@ export default {
       countedTags[merged[x]] = merged.filter(tag => tag === merged[x]).length
     }
     return { allArticles, countedTags }
+  },
+  data () {
+    return {
+      showAlert: true,
+      links: [
+        { name: 'Home', to: '', external: false },
+        { name: 'About', to: '/about', external: false },
+        { name: 'Playlists', to: '/playlists', external: false },
+        { name: 'Photography', to: '/photography', external: false },
+        { name: 'Vim Adventures', to: 'https://vim-adventures.com/', external: true },
+        { name: 'Covid Updates', to: 'https://www.worldometers.info/coronavirus/country/canada/', external: true }
+      ]
+    }
   },
   methods: {
     formatDate (date) {

@@ -1,4 +1,6 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
+  mode: 'jit',
   theme: {
     extend: {
       container: {
@@ -10,6 +12,11 @@ module.exports = {
           xl: '13rem'
         }
       }
+    },
+    colors: {
+      blue: colors.blue,
+      teal: colors.teal,
+      white: colors.white
     }
   },
   variants: {
