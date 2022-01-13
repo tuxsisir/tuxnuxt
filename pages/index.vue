@@ -6,13 +6,16 @@
       </p>
 
       <p class="mb-3 font-mono subpixel-antialiased leading-relaxed text-justify">
-        I am <span class="font-bold">Sisir</span>, I am Software Developer currently
+      I am <span class="font-bold">Sisir</span>, <span class="tux-underline">Software Developer</span> currently
         based in Metro Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
       </p>
-      <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
+      <p class="font-mono subpixel-antialiased leading-relaxed text-justify mb-3">
         This is where I may put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
+      </p>
+
+      <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
         If you want to know more about me,
-        <nuxt-link class="text-blue-500" to="/">
+        <nuxt-link class="text-blue-500" to="/about">
           click here
         </nuxt-link>.
       </p>
@@ -85,3 +88,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.tux-underline {
+  text-decoration: underline solid #efefef 4px;
+}
+</style>

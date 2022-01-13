@@ -13,19 +13,19 @@
         class="float-right mx-2 text-gray-700"
         href="mailto:samratsisir294@gmail.com"
       >
-        <font-awesome-icon :icon="['fa', 'envelope']"/>
+        <font-awesome-icon :icon="['fa', 'envelope']" />
       </a>
       <a
         class="float-right mx-2 text-gray-700"
         href="https://linkedin.com/in/sisir-ghimire-chettri"
       >
-        <font-awesome-icon :icon="['fab', 'linkedin']"/>
+        <font-awesome-icon :icon="['fab', 'linkedin']" />
       </a>
       <a
         class="float-right mx-2 text-gray-700"
         href="https://github.com/tuxsisir"
       >
-        <font-awesome-icon :icon="['fab', 'github']" class="text-xl"/>
+        <font-awesome-icon :icon="['fab', 'github']" class="text-xl" />
       </a>
     </div>
   </header>
