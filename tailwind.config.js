@@ -1,13 +1,15 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
-  mode: 'jit',
   theme: {
     extend: {
+      fontFamily: {
+        body: ['Open Sans']
+      },
       container: {
         padding: {
           DEFAULT: '1rem',
           sm: '2rem',
-          md: '12rem',
+          md: '3rem',
           lg: '13rem',
           xl: '13rem'
         }

@@ -39,7 +39,7 @@ export default {
 .site-header {
   left: 0;
   right: 0;
-  height: 70px;
+  height: 55px;
   padding: 1rem .5rem;
   border-bottom: 2px solid #efefef;
   margin-bottom: .5rem;
