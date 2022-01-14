@@ -16,10 +16,13 @@
         <a v-else :href="link.to" target="_blank" class="lowercase italic underline">{{ link.name }}</a>
       </span>
     </div>
+    <div class="text-center">
+      [ Sisir Ghimire Chettri ]
+    </div>
     <div class="grid grid-cols-3 my-4">
       <div class="md:col-span-1 col-span-3 ">
         <img
-          class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-2xl h-fit w-64 h-64"
+          class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-md h-fit w-64 h-64"
           src="~/static/images/sisir.png"
           alt="Sunset in the mountains"
         >
@@ -34,7 +37,7 @@
             based in Metro Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
           </p>
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify mb-3">
-            This is where I may put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
+          This is where I <span class="line-through">may</span> put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
           </p>
 
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
@@ -109,7 +112,7 @@ export default {
       showAlert: false,
       links: [
         { name: 'About', to: '/about', external: false },
-        { name: 'Playlists', to: '/playlists', external: false },
+        { name: 'projects', to: '/projects', external: false },
         { name: 'Photography', to: '/photography', external: false },
         { name: 'Vim Adventures', to: 'https://vim-adventures.com/', external: true },
         { name: 'Covid Updates', to: 'https://www.worldometers.info/coronavirus/country/canada/', external: true }

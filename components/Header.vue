@@ -53,7 +53,7 @@ svg:not(:root).svg-inline--fa {
 .svg-inline--fa {
     display: inline-block;
     font-size: inherit;
-    height: 1em;
+    height: 1.5em;
     overflow: visible;
     vertical-align: -.125em;
 }

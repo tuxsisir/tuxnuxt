@@ -14,7 +14,7 @@
         last:mr-0 mr-1 mb-10"
             :style="count !== 1 ? 'font-size:' + (12 * count) + 'px' : `font-size: 30px;`"
           >
-            <nuxt-link :to="`/tags/` + tag" class="hover:underline">#{{ tag }}</nuxt-link>
+          <nuxt-link :to="`/tags/` + tag" class="hover:underline">#{{ tag }}<span class="text-sm">[{{count}}]</span></nuxt-link>
           </span>
         </div>
       </div>
