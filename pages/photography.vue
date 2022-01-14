@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="text-3xl text-center text-gray-400 mb-3">
+    <h4 class="text-xl text-center text-gray-400 mb-3">
       Photography
     </h4>
     <hr>
@@ -10,7 +10,7 @@
     </div>
 
     <div class="grid grid-cols-8">
-      <div class="col-start-2 col-span-6">
+      <div class="md:col-start-2 col-start-1 md:col-span-6 col-span-8">
         <figure class="mb-3">
           <img
             src="~/static/photos/coquitlam-view.jpg"

@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-8 gap-4">
-    <div class="col-span-3">
+    <div class="md:col-span-3 col-span-8">
       <h4 class="text-xl text-gray-400 mb-3">
         Recent Playlist
       </h4>
@@ -13,7 +13,7 @@
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       />
     </div>
-    <div class="col-span-5">
+    <div class="md:col-span-5 col-span-8">
       Thanks for coming here. I am working on it.
     </div>
   </div>

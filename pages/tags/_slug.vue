@@ -3,7 +3,9 @@
     <div class="grid grid-cols-6">
       <div class="col-span-2">
         <h3 class="font-bold mt-3 mb-3">
-          All Tags
+          <nuxt-link class="hover:underline" to="/tags">
+            All Tags
+          </nuxt-link>
         </h3>
         <div
           v-for="(count, tag, tagKey) in countedTags"
