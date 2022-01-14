@@ -15,7 +15,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap'
+      }
     ]
   },
 
@@ -76,5 +80,9 @@ export default {
   },
   googleAnalytics: {
     id: 'UA-170620000-1'
+  },
+  loading: {
+    color: '#3482F6',
+    height: '3px'
   }
 }

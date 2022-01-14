@@ -1,16 +1,20 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
   theme: {
+    fontFamily: {
+      sans: ['"Oxygen"'],
+      serif: ['"Oxygen"'],
+      mono: ['"Menlo"'],
+      display: ['"Oxygen"'],
+      body: ['"Oxygen"']
+    },
     extend: {
-      fontFamily: {
-        body: ['Open Sans']
-      },
       container: {
         padding: {
-          DEFAULT: '1rem',
+          DEFAULT: '3rem',
           sm: '2rem',
-          md: '3rem',
-          lg: '13rem',
+          md: '2rem',
+          lg: '2rem',
           xl: '13rem'
         }
       }
@@ -18,7 +22,9 @@ module.exports = {
     colors: {
       blue: colors.blue,
       teal: colors.teal,
-      white: colors.white
+      white: colors.white,
+      cyan: colors.cyan,
+      gray: colors.gray
     }
   },
   variants: {

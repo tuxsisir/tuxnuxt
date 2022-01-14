@@ -17,9 +17,9 @@
       </span>
     </div>
     <div class="grid grid-cols-3 my-4">
-      <div class="md:col-span-1 col-span-3">
+      <div class="md:col-span-1 col-span-3 ">
         <img
-          class="object-cover w-fit mx-auto rounded-lg shadow-lg h-fit w-64 h-64"
+          class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-2xl h-fit w-64 h-64"
           src="~/static/images/sisir.png"
           alt="Sunset in the mountains"
         >
@@ -39,7 +39,7 @@
 
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
             If you want to know more about me,
-            <nuxt-link class="text-blue-500" to="/about">
+            <nuxt-link class="bg-gradient-to-r from-cyan-400 to-blue-500 text-white" to="/about">
               click me.
             </nuxt-link>
           </p>
@@ -48,7 +48,9 @@
     </div>
     <div class="px-3">
       <div class="font-bold mb-0">
-        { Tags }
+        <nuxt-link to="/tags" class="hover:underline">
+          { Tags }
+        </nuxt-link>
       </div>
       <div class="mb-3">
         ======
@@ -57,11 +59,11 @@
         <span
           v-for="(count, tag, tagKey) in countedTags"
           :key="tagKey"
-          class="text-xs inline-block py-1 px-2 rounded text-blue-500
+          class="text-xs inline-block py-1 px-2 rounded text-gray-400
         last:mr-0 mr-1 mb-2"
-          :style="'font-size:' + (2 + 7 * count) + 'px'"
+          :style="count !== 1 ? 'font-size:' + (2 + 7 * count) + 'px' : `font-size: 15px;`"
         >
-          #{{ tag }}
+          <nuxt-link :to="`/tags/` + tag" class="hover:underline">#{{ tag }}</nuxt-link>
         </span>
       </div>
       <div class="font-bold mb-0">
@@ -75,7 +77,7 @@
           <div class="w-32">
             [ {{ formatDate(article.date) }} ]
           </div>
-          <div class="hover:text-white hover:bg-blue-500 text-blue-500 font-bold">
+          <div class="hover:text-white bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 text-blue-500 font-bold">
             <nuxt-link :to="'/notes/' + article.slug">
               {{ article.title }}
             </nuxt-link>
@@ -93,7 +95,7 @@ export default {
   name: 'IndexPage',
   components: { TuxAlert },
   async asyncData ({ $content, params }) {
-    const allArticles = await $content('notes').sortBy('date', 'desc').fetch()
+    const allArticles = await $content('notes').sortBy('date', 'desc').limit(7).fetch()
     const tags = await $content('notes').sortBy('date', 'desc').only(['tags']).fetch()
     const merged = [].concat.apply([], tags.map(x => (x.tags)))
     const countedTags = {}

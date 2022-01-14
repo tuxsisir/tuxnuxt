@@ -1,24 +1,27 @@
 <template>
-  <div class="grid grid-cols-8">
-    <div class="col-span-2">
+  <div class="grid grid-cols-8 gap-8">
+    <div class="md:col-span-2 col-span-8">
       <h3 class="font-bold mt-3">
         Table of Contents
       </h3>
       <div v-if="post.toc.length > 0">
-        <div v-for="(header, headKey) in post.toc" :key="headKey">
-          <a :href="`#` + header.id" class="hover:underline">{{ header.text }}</a>
+        <div v-for="(header, headKey) in post.toc" :key="headKey" class="flex">
+          <div class="mr-2">&raquo;</div>
+          <div>
+            <a :href="`#` + header.id" class="hover:underline text-slate-400">{{ header.text }}</a>
+          </div>
         </div>
       </div>
       <div v-else class="my-3">
         Niente!
       </div>
     </div>
-    <div class="col-span-6">
+    <div class="md:col-span-6 col-span-8">
       <article class="prose max-w-none">
         <h3 class="article-heading font-bold">
           {{ post.title }}
         </h3>
-        <span> {{ formatDate(post.date) }}</span> | <span>{{ post.title }}</span>
+        <span class="text-xs"><font-awesome-icon :icon="['fa', 'calendar']" /> {{ formatDate(post.date) }}</span> | <span class="text-xs">{{ post.title }}</span>
         <hr class="custom-hr">
         <nuxt-content :document="post" />
       </article>

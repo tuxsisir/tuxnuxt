@@ -1,10 +1,10 @@
 <template>
   <div>
-    Playlists
+    Self Notes
   </div>
 </template>
 <script>
 export default {
-  name: 'TuxPlaylists'
+  name: 'SelfNotes'
 }
 </script>

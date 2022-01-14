@@ -13,7 +13,7 @@
         class="float-right mx-2 text-gray-700"
         href="mailto:samratsisir294@gmail.com"
       >
-        <font-awesome-icon :icon="['fa', 'envelope']" />
+        <font-awesome-icon :icon="['fa', 'envelope']" class="fa-2x"/>
       </a>
       <a
         class="float-right mx-2 text-gray-700"
