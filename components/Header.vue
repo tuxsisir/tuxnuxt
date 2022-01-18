@@ -43,6 +43,7 @@ export default {
   padding: 1rem .5rem;
   border-bottom: 2px solid #efefef;
   margin-bottom: .5rem;
+  background: white;
 }
 svg:not(:root).svg-inline--fa {
     overflow: visible;

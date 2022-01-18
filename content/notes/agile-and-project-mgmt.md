@@ -1,8 +1,8 @@
 ---
-title: "Agile and Project Management"
+title: "Agile and Project Management Glossary"
 slug: "agile-and-project-mgmt"
 date: 2020-07-19
-draft: true
+draft: false
 tags: ["agile"]
 ---
 

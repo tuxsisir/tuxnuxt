@@ -25,7 +25,7 @@
 export default {
   name: 'TuxTags',
   async asyncData ({ $content }) {
-    const allTags = await $content('notes').only(['tags']).fetch()
+    const allTags = await $content('notes').where({ draft: false }).only(['tags']).fetch()
     const merged = [].concat.apply([], allTags.map(x => (x.tags)))
     const countedTags = {}
     for (const x in merged) {

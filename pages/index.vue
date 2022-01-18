@@ -37,7 +37,7 @@
             based in Metro Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
           </p>
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify mb-3">
-          This is where I <span class="line-through">may</span> put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
+            This is where I <span class="line-through">may</span> put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
           </p>
 
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
@@ -98,8 +98,8 @@ export default {
   name: 'IndexPage',
   components: { TuxAlert },
   async asyncData ({ $content, params }) {
-    const allArticles = await $content('notes').sortBy('date', 'desc').limit(7).fetch()
-    const tags = await $content('notes').sortBy('date', 'desc').only(['tags']).fetch()
+    const allArticles = await $content('notes').sortBy('date', 'desc').where({ draft: false }).limit(7).fetch()
+    const tags = await $content('notes').sortBy('date', 'desc').where({ draft: false }).only(['tags']).fetch()
     const merged = [].concat.apply([], tags.map(x => (x.tags)))
     const countedTags = {}
     for (const x in merged) {

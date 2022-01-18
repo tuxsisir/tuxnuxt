@@ -1,7 +1,7 @@
 ---
 title: "Vimwiki"
 date: 2021-09-24T17:21:09-07:00
-draft: true
+draft: false
 tags: ["vim"]
 ---
 

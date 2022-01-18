@@ -34,13 +34,14 @@
 export default {
   name: 'TuxTags',
   async asyncData ({ $content, params }) {
-    const allTags = await $content('notes').only(['tags', 'title']).fetch()
+    const allTags = await $content('notes').where({ draft: false }).only(['tags', 'title']).fetch()
     const merged = [].concat.apply([], allTags.map(x => (x.tags)))
     const countedTags = {}
     for (const x in merged) {
       countedTags[merged[x]] = merged.filter(tag => tag === merged[x]).length
     }
-    const filteredPosts = await $content('notes').where({ tags: { $contains: params.slug } }).only(['tags', 'title', 'slug']).fetch()
+    const filteredPosts = await $content('notes').where(
+      { tags: { $contains: params.slug }, draft: false }).only(['tags', 'title', 'slug']).fetch()
     return { filteredPosts, countedTags }
   }
 }

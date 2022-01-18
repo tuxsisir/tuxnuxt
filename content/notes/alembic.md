@@ -1,7 +1,7 @@
 ---
-title: "Alembic"
+title: "Alembic Commands"
 date: 2020-06-18
-draft: true
+draft: false
 tags: ["python", "database"]
 ---
 
