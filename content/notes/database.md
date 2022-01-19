@@ -1,7 +1,7 @@
 ---
 title: "Database - All Inclusive"
 date: 2020-08-19
-draft: true
+draft: false
 tags: ["database"]
 ---
 

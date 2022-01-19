@@ -1,7 +1,8 @@
 ---
 title: "Basic Postgresql Commands"
 date: 2018-02-08
-draft: true
+draft: false
+slug: "basic-postgres-commands"
 tags: ["postgresql","cheatsheet", "database"]
 ---
 

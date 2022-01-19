@@ -1,7 +1,7 @@
 ---
 title: "Basic Mysql Commands"
 date: 2020-02-18T17:21:09-07:00
-draft: true
+draft: false
 tags: ["mysql","cheatsheet", "database"]
 ---
 

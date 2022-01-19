@@ -1,8 +1,7 @@
 ---
 title: "Git Tags and Pypi"
-slug: "git-tags-and-pypi"
 date: 2020-07-18
-draft: true
+draft: false
 tags: ["git", "python", "pypi"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "K8s"
 date: 2020-07-22
-draft: true
+draft: false
 tags: ["devops"]
 ---
 

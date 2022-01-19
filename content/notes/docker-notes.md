@@ -2,7 +2,7 @@
 title: "Docker Notes"
 slug: "docker-notes"
 date: 2020-07-20
-draft: true
+draft: false
 tags: ["docker"]
 ---
 

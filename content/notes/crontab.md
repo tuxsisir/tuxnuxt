@@ -1,7 +1,7 @@
 ---
 title: "Crontab"
 date: 2020-06-15
-draft: true
+draft: false
 tags: ["other"]
 ---
 

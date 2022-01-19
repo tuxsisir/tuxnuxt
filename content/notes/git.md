@@ -1,8 +1,8 @@
 ---
 title: "Git Cheatsheet"
-slug: "git-notes"
+slug: "git"
 date: 2020-07-14
-draft: true
+draft: false
 tags: ["git"]
 ---
 

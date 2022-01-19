@@ -1,8 +1,9 @@
 ---
 title: "Markdown Cheatsheet"
 date: 2018-02-08
-draft: true
-tags: ["markdown","cheatsheet"]
+slug: "markdown-cheatsheet"
+draft: false
+tags: ["markdown", "cheatsheet"]
 ---
 
 

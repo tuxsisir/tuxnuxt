@@ -1,7 +1,7 @@
 ---
 title: "Explore Ansible"
 date: 2020-06-14
-draft: true
+draft: false
 tags: ["devops"]
 ---
 
