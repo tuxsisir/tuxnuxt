@@ -1,9 +1,11 @@
 ---
-title: "Coding Questions"
+title: "Coding Crackers"
 date: 2022-01-16
 draft: false
 tags: ["preps"]
 ---
+
+
 ### make_bricks
 
 ```python
