@@ -1,7 +1,6 @@
 ---
 title: "Explore CI/CD"
 date: 2020-06-12
-slug: "ci-cd"
 draft: false
 tags: ["devops"]
 ---

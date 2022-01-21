@@ -1,6 +1,5 @@
 ---
 title: "Git Cheatsheet"
-slug: "git"
 date: 2020-07-14
 draft: false
 tags: ["git"]

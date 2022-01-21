@@ -98,7 +98,8 @@ export default {
   name: 'IndexPage',
   components: { TuxAlert },
   async asyncData ({ $content, params }) {
-    const allArticles = await $content('notes').sortBy('date', 'desc').where({ draft: false }).limit(7).fetch()
+    const allArticles = await $content('notes').sortBy('date', 'desc')
+      .where({ draft: false }).only(['tags', 'title', 'slug', 'date']).limit(7).fetch()
     const tags = await $content('notes').sortBy('date', 'desc').where({ draft: false }).only(['tags']).fetch()
     const merged = [].concat.apply([], tags.map(x => (x.tags)))
     const countedTags = {}

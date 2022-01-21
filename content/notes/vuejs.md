@@ -1,7 +1,6 @@
 ---
 title: "Vuejs"
 date: 2018-09-30
-slug: "vuejs"
 draft: false
 tags: ["vue"]
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Kubectl"
 date: 2020-07-22
-slug: "kubectl"
 draft: false
 tags: ["devops"]
 ---

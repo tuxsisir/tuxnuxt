@@ -1,7 +1,6 @@
 ---
 title: "oauth"
 date: 2020-07-08
-slug: "auth"
 draft: false
 tags: ["other"]
 ---

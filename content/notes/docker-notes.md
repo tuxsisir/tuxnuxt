@@ -1,6 +1,5 @@
 ---
 title: "Docker Notes"
-slug: "docker-notes"
 date: 2020-07-20
 draft: false
 tags: ["docker"]

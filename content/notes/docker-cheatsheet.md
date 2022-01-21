@@ -1,7 +1,6 @@
 ---
 title: "Docker Cheatsheet"
 date: "2020-05-04"
-slug: "docker-cheatsheet"
 draft: false
 tags: ["containerization", "docker", "cheatsheet"]
 ---
