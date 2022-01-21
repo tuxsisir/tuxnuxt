@@ -5,7 +5,17 @@ draft: false
 tags: ["vim"]
 ---
 
-### vim multiple cursor
+### Telescope
+
+Add to quickfix list
+
+- Open telescope and mark files with `<C-Tab>`
+- Make sure you are in **insert mode**.
+- `<C-q>` to push and open in quickfix.
+- `:cp` and `:cn` to navigate the list of quickfix.
+
+
+### Vim Multiple Cursor
 
 first search for the occurence...
 
