@@ -6,7 +6,9 @@
       </h3>
       <div v-if="post.toc.length > 0">
         <div v-for="(header, headKey) in post.toc" :key="headKey" class="flex">
-          <div class="mr-2">&raquo;</div>
+          <div class="mr-2">
+            &raquo;
+          </div>
           <div>
             <a :href="`#` + header.id" class="hover:underline text-slate-400">{{ header.text }}</a>
           </div>
@@ -21,10 +23,19 @@
         <h3 class="article-heading font-bold">
           {{ post.title }}
         </h3>
-        <span class="text-xs"><font-awesome-icon :icon="['fa', 'calendar']" /> {{ formatDate(post.date) }}</span> | <span class="text-xs">{{ post.title }}</span>
+        <div class="text-xs">
+          <font-awesome-icon :icon="['fa', 'calendar']" /> {{ formatDate(post.date) }}
+        </div>
         <hr class="custom-hr">
         <nuxt-content :document="post" />
       </article>
+      <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-2 text-xs" role="alert">
+        <p class="font-bold mb-2">
+          #JLUK
+        </p>
+        <p>These contents are curated and may or may not be complete as I write them for later references.</p>
+        Last Updated: <span class="">{{ formatDate(post.updatedAt) }}</span>
+      </div>
     </div>
   </div>
 </template>

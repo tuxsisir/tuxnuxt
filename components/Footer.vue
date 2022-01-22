@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="site-footer">
+    <div class="site-footer text-sm text-gray-600">
       Copyleft SGC <span class="copyleft">&copy;</span> {{ currentYear }} ~
       Built with <a href="https://nuxtjs.org/" class="hover:underline" target="_blank">NuxtJS</a>,
       <a href="https://tailwindcss.com/" class="hover:underline" target="_blank">Tailwind CSS</a>, <a
