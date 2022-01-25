@@ -17,7 +17,7 @@
       </span>
     </div>
     <div class="text-center">
-      [ Sisir Ghimire Chettri ]
+      "The Show Must Go On"
     </div>
     <div class="grid grid-cols-3 my-4">
       <div class="md:col-span-1 col-span-3 ">
@@ -113,8 +113,6 @@ export default {
       showAlert: false,
       links: [
         { name: 'About', to: '/about', external: false },
-        { name: 'projects', to: '/projects', external: false },
-        { name: 'Photography', to: '/photography', external: false },
         { name: 'Vim Adventures', to: 'https://vim-adventures.com/', external: true },
         { name: 'Covid Updates', to: 'https://www.worldometers.info/coronavirus/country/canada/', external: true }
       ]
