@@ -132,6 +132,11 @@ netrw - create directory  (d)
 
 netrw - create file (%)
 
+---
+
+### Links:
+
+[Idiomatic Vimrc](https://github.com/romainl/idiomatic-vimrc)
 
 ---
 
