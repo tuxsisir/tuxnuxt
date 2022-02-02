@@ -84,5 +84,9 @@ export default {
   loading: {
     color: '#3482F6',
     height: '3px'
+  },
+  server: {
+    host: 0,
+    port: 6666 // default: 3000
   }
 }
