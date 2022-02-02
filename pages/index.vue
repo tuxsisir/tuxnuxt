@@ -77,9 +77,6 @@
       </div>
       <div v-for="(article, key) in allArticles" :key="key">
         <div class="flex">
-          <div class="w-32">
-            [ {{ formatDate(article.date) }} ]
-          </div>
           <div class="hover:text-white bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 text-blue-500 font-bold">
             <nuxt-link :to="'/notes/' + article.slug">
               {{ article.title }}

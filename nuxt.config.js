@@ -87,6 +87,6 @@ export default {
   },
   server: {
     host: 0,
-    port: 6666 // default: 3000
+    port: 5555 // default: 3000
   }
 }
