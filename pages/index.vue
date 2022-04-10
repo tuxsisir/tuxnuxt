@@ -23,8 +23,8 @@
       <div class="md:col-span-1 col-span-3 ">
         <img
           class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-md h-fit w-64 h-64"
-          src="~/static/images/sisir.png"
-          alt="Sunset in the mountains"
+          src="~/static/images/sisir.jpg"
+          alt="Sisir Ghimire Chettri"
         >
       </div>
       <div class="md:col-span-2 col-span-3">
