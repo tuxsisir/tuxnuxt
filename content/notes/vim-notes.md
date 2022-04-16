@@ -245,3 +245,7 @@ open fold all -zR
 :Commits
 :Glog — % [[ for current file changes ]]
 
+
+netrw
+
+gn to make the current treeptop
