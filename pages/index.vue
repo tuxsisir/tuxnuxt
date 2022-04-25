@@ -16,9 +16,6 @@
         <a v-else :href="link.to" target="_blank" class="lowercase italic underline">{{ link.name }}</a>
       </span>
     </div>
-    <div class="text-center">
-      "The Show Must Go On"
-    </div>
     <div class="grid grid-cols-3 my-4">
       <div class="md:col-span-1 col-span-3 ">
         <img
