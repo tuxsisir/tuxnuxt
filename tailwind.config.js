@@ -1,6 +1,8 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
+  darkMode: 'class',
   theme: {
+    darkSelector: '.dark',
     fontFamily: {
       sans: ['"Oxygen"'],
       serif: ['"Oxygen"'],
@@ -20,6 +22,7 @@ module.exports = {
       }
     },
     colors: {
+      black: colors.black,
       blue: colors.blue,
       teal: colors.teal,
       white: colors.white,

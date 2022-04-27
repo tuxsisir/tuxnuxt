@@ -6,6 +6,24 @@
       </div>
     </div>
 
+    <h1 class="">
+      Color mode: {{ $colorMode.value }}
+    </h1>
+    <select v-model="$colorMode.preference">
+      <option value="system">
+        System
+      </option>
+      <option value="light">
+        Light
+      </option>
+      <option value="dark">
+        Dark
+      </option>
+      <option value="sepia">
+        Sepia
+      </option>
+    </select>
+
     <div class="mb-5 text-center">
       <span
         v-for="(link, linkKey) in links"
@@ -16,8 +34,17 @@
         <a v-else :href="link.to" target="_blank" class="lowercase italic underline">{{ link.name }}</a>
       </span>
     </div>
-    <div class="text-center">
-      "The Show Must Go On"
+    <div class="flex justify-center gap-2">
+      <div class="">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          Personal
+        </button>
+      </div>
+      <div class="">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          Work
+        </button>
+      </div>
     </div>
     <div class="grid grid-cols-3 my-4">
       <div class="md:col-span-1 col-span-3 ">
@@ -122,9 +149,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.tux-underline {
-  text-decoration: underline solid #efefef 4px;
-}
-</style>
