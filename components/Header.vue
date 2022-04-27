@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between items-center site-header">
+  <header class="flex justify-between items-center site-header dark:bg-gray-800">
     <div>
       <h1 class="my-3 text-3xl font-thin">
         <nuxt-link to="/" class="text-blue-500">
@@ -13,7 +13,7 @@
         class="float-right mx-2 text-gray-700"
         href="mailto:samratsisir294@gmail.com"
       >
-        <font-awesome-icon :icon="['fa', 'envelope']" class="fa-2x"/>
+        <font-awesome-icon :icon="['fa', 'envelope']" class="fa-2x" />
       </a>
       <a
         class="float-right mx-2 text-gray-700"
@@ -26,6 +26,20 @@
         href="https://github.com/tuxsisir"
       >
         <font-awesome-icon :icon="['fab', 'github']" class="text-xl" />
+      </a>
+      <a
+        v-if="$colorMode.value == `dark`"
+        class="float-right mx-2 text-gray-700"
+        @click="$colorMode.preference = `light`"
+      >
+        <font-awesome-icon :icon="['fa', 'sun']" class="text-xl" />
+      </a>
+      <a
+        v-else
+        class="float-right mx-2 text-gray-700"
+        @click="$colorMode.preference = `dark`"
+      >
+        <font-awesome-icon :icon="['fa', 'moon']" class="text-xl" />
       </a>
     </div>
   </header>

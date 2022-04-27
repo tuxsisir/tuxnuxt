@@ -14,20 +14,12 @@
       />
     </div>
     <div class="md:col-span-5 col-span-8">
-      Thanks for coming here. I am working on it =-
+      Thanks for coming here. I am working on it.
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'AboutPage',
-  colorMode: 'light'
+  name: 'AboutPage'
 }
 </script>
-
-<style>
-iframe {
-  width: 100%;
-  height: 480px;
-}
-</style>

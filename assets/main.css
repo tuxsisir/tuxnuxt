@@ -1,3 +1,7 @@
+html,
+body {
+    height: 100%;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
@@ -8,6 +12,7 @@
 }
 
 #app {
+  height: 100%;
   transition: background-color linear 0.5s;
 }
 
@@ -47,4 +52,7 @@ figcaption {
 }
 figcaption::after, figcaption::before {
   content: "\00a0 \00a0 ";
+}
+a {
+  cursor: pointer;
 }

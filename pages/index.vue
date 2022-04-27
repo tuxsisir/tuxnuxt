@@ -5,25 +5,6 @@
         <tux-alert :show-alert="showAlert" />
       </div>
     </div>
-    <!--
-    <h1 class="">
-      Color mode: {{ $colorMode.value }}
-    </h1>
-    <select v-model="$colorMode.preference">
-      <option value="system">
-        System
-      </option>
-      <option value="light">
-        Light
-      </option>
-      <option value="dark">
-        Dark
-      </option>
-      <option value="sepia">
-        Sepia
-      </option>
-    </select>
-    -->
     <div class="mb-5 text-center">
       <span
         v-for="(link, linkKey) in links"
@@ -122,7 +103,6 @@ export default {
   name: 'IndexPage',
   components: { TuxAlert },
   transition: 'fade',
-  colorMode: 'light',
   async asyncData ({ $content, params }) {
     const allArticles = await $content('notes').sortBy('date', 'desc')
       .where({ draft: false }).only(['tags', 'title', 'slug', 'date']).limit(7).fetch()
