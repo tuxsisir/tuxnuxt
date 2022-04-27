@@ -20,7 +20,8 @@
 </template>
 <script>
 export default {
-  name: 'AboutPage'
+  name: 'AboutPage',
+  colorMode: 'light'
 }
 </script>
 

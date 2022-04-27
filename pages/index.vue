@@ -120,8 +120,9 @@ import TuxAlert from '@/components/TuxAlert'
 
 export default {
   name: 'IndexPage',
-  transition: 'fade',
   components: { TuxAlert },
+  transition: 'fade',
+  colorMode: 'light',
   async asyncData ({ $content, params }) {
     const allArticles = await $content('notes').sortBy('date', 'desc')
       .where({ draft: false }).only(['tags', 'title', 'slug', 'date']).limit(7).fetch()
