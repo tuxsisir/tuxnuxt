@@ -5,7 +5,7 @@
         <tux-alert :show-alert="showAlert" />
       </div>
     </div>
-
+    <!--
     <h1 class="">
       Color mode: {{ $colorMode.value }}
     </h1>
@@ -23,7 +23,7 @@
         Sepia
       </option>
     </select>
-
+    -->
     <div class="mb-5 text-center">
       <span
         v-for="(link, linkKey) in links"
