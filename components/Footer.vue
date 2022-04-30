@@ -27,7 +27,7 @@ export default {
   right: 0;
   height: 70px;
   padding: 1rem 0rem;
-  border-top: 2px solid #efefef;
+  border-top: 2px solid #f0e7db;
   margin-top: 1.5rem;
 }
 .copyleft {

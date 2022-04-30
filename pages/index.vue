@@ -16,14 +16,14 @@
       </span>
     </div>
     <div class="flex justify-center gap-2">
-      <div class="">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-          Personal
-        </button>
-      </div>
-      <div class="">
+      <div>
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
           Work
+        </button>
+      </div>
+      <div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          Personal
         </button>
       </div>
     </div>
@@ -36,13 +36,13 @@
         >
       </div>
       <div class="md:col-span-2 col-span-3">
-        <div class="p-3 mb-3 text-justify">
+        <div class="p-3 mb-3 text-justify dark:text-gray-400">
           <p class="font-mono subpixel-antialiased leading-relaxed mb-3">
             Hi, Thank you for reaching out here.
           </p>
           <p class="mb-3 font-mono subpixel-antialiased leading-relaxed text-justify">
-            I am <span class="font-bold">Sisir</span>, <span class="tux-underline">Software Developer</span> currently
-            based in Metro Vancouver, BC originally from Nepal. At present, I am going back to school to pursue degree in Data Analytics.
+            I am <span class="font-bold">Sisir</span>, <span class="underline decoration-wavy">Software Developer</span> currently
+            based in Canada. At present, I am going back to school to pursue degree in Data Analytics.
           </p>
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify mb-3">
             This is where I <span class="line-through">may</span> put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
@@ -59,11 +59,11 @@
     </div>
     <div class="px-3">
       <div class="font-bold mb-0">
-        <nuxt-link to="/tags" class="hover:underline">
+        <nuxt-link to="/tags" class="hover:underline dark:text-gray-400">
           { Tags }
         </nuxt-link>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 dark:text-gray-400">
         ======
       </div>
       <div class="mb-5 text-center">
@@ -77,10 +77,10 @@
           <nuxt-link :to="`/tags/` + tag" class="hover:underline">#{{ tag }}</nuxt-link>
         </span>
       </div>
-      <div class="font-bold mb-0">
+      <div class="font-bold mb-0 dark:text-gray-400">
         { Self Notes }
       </div>
-      <div class="mb-3">
+      <div class="mb-3 dark:text-gray-400">
         ===========
       </div>
       <div v-for="(article, key) in allArticles" :key="key">

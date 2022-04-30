@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="md:col-span-6 col-span-8">
-      <article class="prose max-w-none">
+      <article class="prose dark:prose-dark max-w-none">
         <h3 class="article-heading font-bold">
           {{ post.title }}
         </h3>

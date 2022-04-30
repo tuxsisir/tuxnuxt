@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-white dark:bg-gray-800">
+  <div id="app" class="h-full bg-light dark:bg-gray-800">
     <div class="container mx-auto">
       <app-header />
       <Nuxt />

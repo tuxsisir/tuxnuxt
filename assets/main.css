@@ -1,10 +1,13 @@
-html,
-body {
-    height: 100%;
+html,body, #__nuxt, #__layout{
+  min-height: 100vh !important;
+  width: 100%!important;
+}
+.bg-light {
+  background-color: #f6f0e9;
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.2s;
 }
 .fade-enter,
 .fade-leave-active {
@@ -12,8 +15,8 @@ body {
 }
 
 #app {
-  height: 100%;
-  transition: background-color linear 0.5s;
+  min-height: 100vh;
+  transition: background-color linear 0.2s;
 }
 
 .tux-underline {
