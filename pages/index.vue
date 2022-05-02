@@ -38,7 +38,7 @@
         >
       </div>
       <div class="md:col-span-2 col-span-3">
-        <div class="px-5 mb-3 text-justify dark:text-gray-400">
+        <div class="p-3 mb-3 text-justify dark:text-gray-400">
           <p class="font-mono subpixel-antialiased leading-relaxed mb-3">
             Hi, Thank you for reaching out here.
           </p>
