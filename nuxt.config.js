@@ -22,7 +22,7 @@ export default {
       }
     ]
   },
-
+  pageTransition: 'slide-fade',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@assets/main.css',
@@ -77,8 +77,10 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     liveEdit: false,
-    prism: {
-      theme: 'prism-themes/themes/prism-material-oceanic.css'
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
     }
   },
 

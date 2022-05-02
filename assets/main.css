@@ -14,14 +14,17 @@ html,body, #__nuxt, #__layout{
   opacity: 0;
 }
 
-#app {
-  min-height: 100vh;
-  transition: background-color linear 0.2s;
+.slide-fade-enter-active {
+   transition: all .3s ease;
+}
+.slide-fade-leave-active {
+   transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+   transform: translateX(10px);
+   opacity: 0;
 }
 
-.tux-underline {
-  text-decoration: underline solid #efefef 4px;
-}
 figure {
   position: relative;
   border: thin #c0c0c0 solid;
@@ -58,4 +61,22 @@ figcaption::after, figcaption::before {
 }
 a {
   cursor: pointer;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1.5em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+.copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
 }

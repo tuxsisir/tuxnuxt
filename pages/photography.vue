@@ -4,11 +4,6 @@
       Photos
     </h4>
     <hr>
-    <div class="italic text-gray-500 my-3">
-      I love photography, I am not good at it (trying) but somehow I manage to eke out some photos here and there. I
-      like to keep them  !
-    </div>
-
     <div class="grid grid-cols-8">
       <div class="md:col-start-2 col-start-1 md:col-span-6 col-span-8">
         <figure class="mb-3">
@@ -18,9 +13,6 @@
           >
           <figcaption>Photo taken with Samsung Galaxy Note 10 Lite</figcaption>
         </figure>
-        <blockquote>
-          <p>Scenic View of Coquitlam from Surrey</p>
-        </blockquote>
       </div>
     </div>
     <div class="mt-4 italic">

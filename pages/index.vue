@@ -5,6 +5,7 @@
         <tux-alert :show-alert="showAlert" />
       </div>
     </div>
+    <!--
     <div class="mb-5 text-center">
       <span
         v-for="(link, linkKey) in links"
@@ -17,18 +18,19 @@
     </div>
     <div class="flex justify-center gap-2">
       <div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-          Work
+        <button class="bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded-full">
+          Resume
         </button>
       </div>
       <div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded-full">
           Personal
         </button>
       </div>
     </div>
+    -->
     <div class="grid grid-cols-3 my-4">
-      <div class="md:col-span-1 col-span-3 ">
+      <div class="md:col-span-1 col-span-3">
         <img
           class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-md h-fit w-64 h-64"
           src="~/static/images/sisir.jpg"
@@ -36,17 +38,19 @@
         >
       </div>
       <div class="md:col-span-2 col-span-3">
-        <div class="p-3 mb-3 text-justify dark:text-gray-400">
+        <div class="px-5 mb-3 text-justify dark:text-gray-400">
           <p class="font-mono subpixel-antialiased leading-relaxed mb-3">
             Hi, Thank you for reaching out here.
           </p>
           <p class="mb-3 font-mono subpixel-antialiased leading-relaxed text-justify">
-            I am <span class="font-bold">Sisir</span>, <span class="underline decoration-wavy">Software Developer</span> currently
+            I am <span class="font-bold">Sisir</span>, <span class="underline underline-wavy">Software Developer</span> currently
             based in Canada. At present, I am going back to school to pursue degree in Data Analytics.
           </p>
+          <!--
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify mb-3">
             This is where I <span class="line-through">may</span> put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
           </p>
+          -->
 
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
             If you want to know more about me,
@@ -58,14 +62,6 @@
       </div>
     </div>
     <div class="px-3">
-      <div class="font-bold mb-0">
-        <nuxt-link to="/tags" class="hover:underline dark:text-gray-400">
-          { Tags }
-        </nuxt-link>
-      </div>
-      <div class="mb-3 dark:text-gray-400">
-        ======
-      </div>
       <div class="mb-5 text-center">
         <span
           v-for="(count, tag, tagKey) in countedTags"
@@ -76,12 +72,6 @@
         >
           <nuxt-link :to="`/tags/` + tag" class="hover:underline">#{{ tag }}</nuxt-link>
         </span>
-      </div>
-      <div class="font-bold mb-0 dark:text-gray-400">
-        { Self Notes }
-      </div>
-      <div class="mb-3 dark:text-gray-400">
-        ===========
       </div>
       <div v-for="(article, key) in allArticles" :key="key">
         <div class="flex">
@@ -102,10 +92,9 @@ import TuxAlert from '@/components/TuxAlert'
 export default {
   name: 'IndexPage',
   components: { TuxAlert },
-  transition: 'fade',
   async asyncData ({ $content, params }) {
     const allArticles = await $content('notes').sortBy('date', 'desc')
-      .where({ draft: false }).only(['tags', 'title', 'slug', 'date']).limit(7).fetch()
+      .where({ draft: false }).only(['tags', 'title', 'slug', 'date']).limit(10).fetch()
     const tags = await $content('notes').sortBy('date', 'desc').where({ draft: false }).only(['tags']).fetch()
     const merged = [].concat.apply([], tags.map(x => (x.tags)))
     const countedTags = {}

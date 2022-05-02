@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="site-footer text-sm text-gray-600">
+    <div class="border-t-2 border-gray-300 dark:border-gray-700 text-sm text-gray-600 mt-6 py-6 transition ease-linear duration-200">
       Copyleft SGC <span class="copyleft">&copy;</span> {{ currentYear }} ~
       Built with <a href="https://nuxtjs.org/" class="hover:underline" target="_blank">NuxtJS</a>,
       <a href="https://tailwindcss.com/" class="hover:underline" target="_blank">Tailwind CSS</a>, <a
@@ -21,17 +21,3 @@ export default {
   }
 }
 </script>
-<style>
-.site-footer {
-  left: 0;
-  right: 0;
-  height: 70px;
-  padding: 1rem 0rem;
-  border-top: 2px solid #f0e7db;
-  margin-top: 1.5rem;
-}
-.copyleft {
-  display:inline-block;
-  transform: rotate(180deg);
-}
-</style>

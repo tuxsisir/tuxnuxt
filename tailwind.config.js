@@ -90,7 +90,9 @@ module.exports = {
       teal: colors.teal,
       white: colors.white,
       cyan: colors.cyan,
-      gray: colors.gray
+      gray: colors.gray,
+      amber: colors.amber,
+      purple: colors.purple
     }
   },
   variants: {

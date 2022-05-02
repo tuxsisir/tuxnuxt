@@ -13,8 +13,10 @@
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       />
     </div>
-    <div class="md:col-span-5 col-span-8">
-      Thanks for coming here. I am working on it.
+    <div class="md:col-span-5 col-span-8 text-gray-400">
+      <p>
+        Thanks for coming here. I am working on it.
+      </p>
     </div>
   </div>
 </template>
