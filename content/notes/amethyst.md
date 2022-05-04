@@ -16,7 +16,7 @@ While the experience won't be snappy as Xmonand or i3, but you can get closer to
 #### Amethyst:
 https://github.com/ianyh/Amethyst
 
-Switch between different layouts:
+##### Switch between different layouts:
 
 - `Alt+Shift+Space`
 
@@ -52,5 +52,5 @@ Register small window apps as floating window:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjA1NjExNiwxNDE5Njk4NzE2XX0=
+eyJoaXN0b3J5IjpbLTIxMjgyMzE2MjUsMTQxOTY5ODcxNl19
 -->
