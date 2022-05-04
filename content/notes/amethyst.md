@@ -1,3 +1,10 @@
+---
+title: "Amethyst Workflow"
+date: 2022-05-03
+draft: false
+tags: ["workflow", "productivity"]
+---
+
 #### Amethyst Workflow
 
 I have always been fond of tiling window managers which completely utilizes each and every space that you see on your screen. 
@@ -6,15 +13,17 @@ Coming from linux to mac, you might also be searching to integrate tiling window
 
 While the experience won't be snappy as Xmonand or i3, but you can get closer to it with Amethyst (at least for me). There are other tiling managers for macos other than Amethyst but here I will share my workflow with amethyst.
 
-Amethyst:
+#### Amethyst:
 https://github.com/ianyh/Amethyst
 
 Switch between different layouts:
+
 - `Alt+Shift+Space`
 
 I prefer Column or Tall Layout, depending on the flow.
 
 Switch to Column Layout:
+
 - `Alt+Shift+F`
 
 If more than 3 windows where feasible portrait layouts. Column would be more productive.
@@ -43,5 +52,5 @@ Register small window apps as floating window:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxOTY5ODcxNl19
+eyJoaXN0b3J5IjpbMTc5NjA1NjExNiwxNDE5Njk4NzE2XX0=
 -->
