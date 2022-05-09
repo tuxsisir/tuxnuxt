@@ -5,7 +5,6 @@
         <tux-alert :show-alert="showAlert" />
       </div>
     </div>
-    <!--
     <div class="mb-5 text-center">
       <span
         v-for="(link, linkKey) in links"
