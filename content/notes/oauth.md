@@ -1,7 +1,7 @@
 ---
 title: "oauth"
 date: 2020-07-08
-draft: false
+draft: true
 tags: ["other"]
 ---
 

@@ -5,8 +5,10 @@ draft: false
 tags: ["mysql","cheatsheet", "database"]
 ---
 
+Thanks for coming to this particular blog among many mysql commands cheatsheet. I am gathering all the mysql commands that I go through and update them here.
 
-### Create User and Grant Privileges
+#### Create User and Grant Privileges
+
 ```sql
 CREATE USER 'flaskuser'@'localhost' IDENTIFIED BY 'flaskpassword';
 
@@ -60,36 +62,32 @@ ALTER TABLE my_tbl
 CHANGE full_name name varchar(50);
 ```
 
-### Deleting Column :
+### Delete Column
 ```sql
 ALTER TABLE my_tbl drop name;
 ```
 
-### Adding Column :
+### Adding Column
 ```sql
 ALTER TABLE my_tbl ADD roll int;
 ```
 
-### Insert Query :
+##### Basic CRUD commands
+
 ```sql
+-- Insert
 INSERT INTO my_tbl
   (id,name,address,gender)
   values (‘1’,’sisir’,’ktm’,’male’);
-```
 
-### Update Query :
-```sql
+-- Update
 UPDATE my_tbl
   set name = ‘ccr’ where id=‘1’;
-```
 
-### Delete Query :
-```sql
-DELETE from my_tbl where id = ‘2';
-```
-
-### Select Query :
-```sql
+-- Select
 SELECT * FROM my_tbl where id=‘2’;
-```
 
+-- Delete
+DELETE from my_tbl where id = ‘2';
+
+```

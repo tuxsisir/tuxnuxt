@@ -1,5 +1,6 @@
 <template>
   <div class="grid grid-cols-8 gap-8">
+    <!--
     <div class="md:col-span-2 col-span-8">
       <h3 class="font-bold mt-3">
         Table of Contents
@@ -18,15 +19,15 @@
         Niente!
       </div>
     </div>
-    <div class="md:col-span-6 col-span-8">
-      <article class="prose max-w-none">
-        <h3 class="article-heading font-bold">
-          {{ post.title }}
-        </h3>
+    -->
+    <div class="md:col-span-8 col-span-8">
+      <h2 class="text-2xl text-gray-400 font-bold mb-2">
+        {{ post.title }}
+      </h2>
+      <article class="prose dark:prose-dark max-w-none">
         <div class="text-xs">
-          <font-awesome-icon :icon="['fa', 'calendar']" /> {{ formatDate(post.date) }}
+          <span class="italic">Created:</span> {{ formatDate(post.date) }}
         </div>
-        <hr class="custom-hr">
         <nuxt-content :document="post" />
       </article>
       <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-2 text-xs" role="alert">
@@ -63,11 +64,3 @@ export default {
   }
 }
 </script>
-<style>
-.custom-hr {
-  margin: 0.4rem 0px !important;
-}
-.article-heading {
-  margin: 0.75rem 0 0 0 !important;
-}
-</style>

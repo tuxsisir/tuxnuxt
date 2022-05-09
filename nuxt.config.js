@@ -22,9 +22,10 @@ export default {
       }
     ]
   },
-
+  pageTransition: 'slide-fade',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@assets/main.css',
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
@@ -43,8 +44,12 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     // google analytics
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/color-mode'
   ],
+  colorMode: {
+    classSuffix: ''
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -71,7 +76,12 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    liveEdit: false
+    liveEdit: false,
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

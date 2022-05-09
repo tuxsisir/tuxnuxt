@@ -1,6 +1,20 @@
 <template>
   <div>
+    <div class="flex items-stretch mb-4 capitalize">
+      <div class="mr-2">
+        <nuxt-link :to="`/tags`" class="mr-1 hover:underline text-blue-500">
+          Tags
+        </nuxt-link>
+        <span class="text-gray-400">
+          &raquo;
+        </span>
+      </div>
+      <div class="text-gray-400">
+        {{ paramSlug }}
+      </div>
+    </div>
     <div class="grid grid-cols-6">
+      <!--
       <div class="col-span-2">
         <h3 class="font-bold mt-3 mb-3">
           <nuxt-link class="hover:underline" to="/tags">
@@ -17,12 +31,10 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="col-span-4">
-        <h3 class="article-heading font-bold">
-          Notes
-        </h3>
+      -->
+      <div class="col-span-6 text-gray-400">
         <div v-for="(notes, ind) in filteredPosts" :key="ind">
-          <nuxt-link :to="`/notes/` + notes.slug">
+          <nuxt-link :to="`/notes/` + notes.slug" class="hover:underline">
             {{ notes.title }}
           </nuxt-link>
         </div>
@@ -43,11 +55,11 @@ export default {
     const filteredPosts = await $content('notes').where(
       { tags: { $contains: params.slug }, draft: false }).only(['tags', 'title', 'slug']).fetch()
     return { filteredPosts, countedTags }
+  },
+  computed: {
+    paramSlug () {
+      return this.$route.params.slug
+    }
   }
 }
 </script>
-<style>
-.article-heading {
-  margin: 0.75rem 0 0 0 !important;
-}
-</style>
