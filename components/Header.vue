@@ -16,20 +16,20 @@
         class="float-right mx-2"
         @click="$colorMode.preference = `light`"
       >
-        <font-awesome-icon :icon="['fa', 'bolt']" class="fa-xl text-gray-700 dark:text-amber-300" />
+        <font-awesome-icon :icon="['fas', 'bolt']" class="fa-xl text-gray-700 dark:text-amber-300" />
       </a>
       <a
         v-else
         class="float-right mx-2"
         @click="$colorMode.preference = `dark`"
       >
-        <font-awesome-icon :icon="['fa', 'moon']" class="fa-xl text-purple-700 dark:text-gray-600" />
+        <font-awesome-icon :icon="['fas', 'moon']" class="fa-xl text-purple-700 dark:text-gray-600" />
       </a>
       <a
         class="float-right mx-2"
         href="mailto:samratsisir294@gmail.com"
       >
-        <font-awesome-icon :icon="['fa', 'envelope']" class="fa-xl text-gray-700 dark:text-gray-600" />
+        <font-awesome-icon :icon="['fas', 'envelope']" class="fa-xl text-gray-700 dark:text-gray-600" />
       </a>
       <a
         class="float-right mx-2"

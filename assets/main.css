@@ -2,6 +2,21 @@ html,body, #__nuxt, #__layout{
   min-height: 100vh !important;
   width: 100%!important;
 }
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Oxygen/Oxygen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/Oxygen/Oxygen-Bold.ttf') format('truetype');
+}
 .bg-light {
   background-color: #f6f0e9;
 }

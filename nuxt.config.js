@@ -11,15 +11,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Sisir Ghimire Chettri personal web address' },
+      { hid: 'description', name: 'description', content: 'Full Stack Developer' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   pageTransition: 'slide-fade',
@@ -31,7 +27,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/fontawesome.js', mode: 'client' }
+    { src: '~/plugins/fontawesome.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -41,6 +37,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/svg',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     // google analytics
@@ -71,7 +68,8 @@ export default {
   pwa: {
     manifest: {
       lang: 'en'
-    }
+    },
+    icon: false
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
