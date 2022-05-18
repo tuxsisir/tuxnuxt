@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a,b,c){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1652837598",layout:"default",error:a,serverRendered:b,routePath:"\u002Fnotes\u002Fgit-tag-and-pypi",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"33303463"}},colorMode:{preference:c,value:c,unknown:b,forced:false}}}(null,true,"system"));
