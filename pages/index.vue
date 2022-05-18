@@ -29,28 +29,27 @@
       </div>
     </div>
     -->
-    <div class="grid grid-cols-3 my-4">
+    <div class="grid grid-cols-6 my-4">
       <div class="md:col-span-1 col-span-3">
         <img
-          class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-md h-fit w-64 h-64"
+          class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-md h-fit w-32 h-32 rounded-full"
           src="~/static/images/sisir.jpg"
           alt="Sisir Ghimire Chettri"
         >
       </div>
-      <div class="md:col-span-2 col-span-3">
+      <div class="md:col-span-5 col-span-3">
         <div class="p-3 mb-3 text-justify dark:text-gray-400">
           <p class="font-mono subpixel-antialiased leading-relaxed mb-3">
             Hi, Thank you for reaching out here.
           </p>
           <p class="mb-3 font-mono subpixel-antialiased leading-relaxed text-justify">
-            I am <span class="font-bold">Sisir</span>, <span class="underline underline-wavy">Software Developer</span> currently
+            I am <span class="font-bold">Sisir</span>, <span class="underline underline-wavy">Software Engineer</span> currently
             based in Canada. At present, I am going back to school to pursue degree in Data Analytics.
           </p>
           <!--
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify mb-3">
             This is where I <span class="line-through">may</span> put my jibber-jabber writings to references and see backs. I hope that the things here would be of help for you too.
           </p>
-          -->
 
           <p class="font-mono subpixel-antialiased leading-relaxed text-justify">
             If you want to know more about me,
@@ -58,6 +57,7 @@
               click me.
             </nuxt-link>
           </p>
+          -->
         </div>
       </div>
     </div>
