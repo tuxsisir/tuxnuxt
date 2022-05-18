@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-light dark:bg-gray-800 transition ease-linear duration-200">
+  <div class="min-h-screen bg-light dark:bg-gray-900 transition ease-linear duration-200">
     <div class="container mx-auto">
       <app-header />
       <Nuxt />
