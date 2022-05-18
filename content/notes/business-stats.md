@@ -1,5 +1,5 @@
 ---
-title: "Business Stats"
+title: "Stats"
 date: 2021-11-12
 draft: false
 tags: ["stats"]

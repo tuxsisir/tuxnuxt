@@ -5,7 +5,6 @@
         <tux-alert :show-alert="showAlert" />
       </div>
     </div>
-    <!--
     <div class="mb-5 text-center">
       <span
         v-for="(link, linkKey) in links"
@@ -16,19 +15,6 @@
         <a v-else :href="link.to" target="_blank" class="lowercase italic underline">{{ link.name }}</a>
       </span>
     </div>
-    <div class="flex justify-center gap-2">
-      <div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded-full">
-          Resume
-        </button>
-      </div>
-      <div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded-full">
-          Personal
-        </button>
-      </div>
-    </div>
-    -->
     <div class="grid grid-cols-6 my-4">
       <div class="md:col-span-1 col-span-3">
         <img
