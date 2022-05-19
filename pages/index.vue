@@ -17,20 +17,26 @@
       </span>
     </div>
     -->
-    <div class="grid grid-cols-6 my-4">
-      <div class="md:col-span-1 col-span-6">
-        <div>
-          <profile-svg-trace v-show="!imageLoad" class="h-fit w-42 h-42" />
+    <div class="grid grid-cols-8 my-4">
+      <div class="md:col-span-2 col-span-8">
+        <div class="relative w-full h-44">
+          <img
+            :src="profileImgThumb.trace"
+            class="object-cover w-fit mx-auto shadow hover:shadow-lg h-fit rounded-full h-44 w-44 absolute top-0 bottom-0 left-0 right-0"
+          >
+
+          <img
+            ref="imageProfile"
+            :src="profileImgThumb.src"
+            class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-md h-fit h-44 w-44 rounded-full transition-opacity duration-500 absolute top-0 bottom-0 left-0 right-0"
+            :class="imageLoad ? `opacity-100` : `opacity-0`"
+            alt="Sisir Ghimire Chettri"
+            @load="onProfileImageLoad"
+          >
         </div>
-        <img
-          v-show="imageLoad"
-          class="object-cover w-fit mx-auto shadow hover:shadow-lg rounded-md h-fit w-42 h-42 rounded-full transition duration-0 hover:duration-500 ease-in-out"
-          :src="require(`~/assets/images/sisir.jpg`)"
-          alt="Sisir Ghimire Chettri"
-          @load="onProfileImageLoad"
-        >
+        </image-wrapper>
       </div>
-      <div class="md:col-span-5 col-span-6">
+      <div class="md:col-span-6 col-span-8">
         <div class="p-3 mb-3 text-justify dark:text-gray-400">
           <p class="font-mono subpixel-antialiased leading-relaxed mb-3">
             Hi, Thank you for reaching out here.
@@ -81,11 +87,13 @@
 
 <script>
 import TuxAlert from '@/components/TuxAlert'
-import ProfileSvgTrace from '@/components/ProfileSvgTrace'
+
+// eslint-disable-next-line
+import profileThumb from '!!image-trace-loader?color=#BDCDD4&background=#FFF!../assets/images/sisir.jpg'
 
 export default {
   name: 'IndexPage',
-  components: { TuxAlert, ProfileSvgTrace },
+  components: { TuxAlert },
   async asyncData ({ $content, params }) {
     const allArticles = await $content('notes').sortBy('date', 'desc')
       .where({ draft: false }).only(['tags', 'title', 'slug', 'date']).limit(10).fetch()
@@ -100,6 +108,7 @@ export default {
   data () {
     return {
       showAlert: false,
+      profileImgThumb: profileThumb,
       links: [
         { name: 'About', to: '/about', external: false },
         { name: 'Vim Adventures', to: 'https://vim-adventures.com/', external: true },
@@ -113,7 +122,10 @@ export default {
       return new Date(date).toISOString().slice(0, 10)
     },
     onProfileImageLoad () {
-      this.imageLoad = true
+      setTimeout(() => {
+        // this.$refs.imageProfile.classList.value += ' opacity-100'
+        this.imageLoad = true
+      }, 2000)
     }
   }
 }

@@ -95,3 +95,15 @@ svg:not(:root).svg-inline--fa {
   display:inline-block;
   transform: rotate(180deg);
 }
+
+.profile-image{
+  transition: opacity 300ms;
+}
+
+.image {
+  opacity: 0;
+}
+
+.loaded {
+  opacity: 1;
+}
