@@ -37,11 +37,18 @@
         <p>These contents are curated and may or may not be complete as I write them for later references.</p>
         Last Updated: <span class="">{{ formatDate(post.updatedAt) }}</span>
       </div>
+      <section class="my-4" aria-labelledby="comment">
+        <Disqus shortname="tuxsisir-github-io" />
+      </section>
     </div>
   </div>
 </template>
 <script>
+import { Disqus } from 'vue-disqus'
+
 export default {
+  name: 'NotesPage',
+  components: { Disqus },
   async asyncData ({ $content, params }) {
     const post = await $content('notes', params.slug).fetch()
 
@@ -55,6 +62,11 @@ export default {
       post,
       prev,
       next
+    }
+  },
+  head () {
+    return {
+      title: this.post.title
     }
   },
   methods: {

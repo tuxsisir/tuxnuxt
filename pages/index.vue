@@ -117,15 +117,19 @@ export default {
       imageLoad: false
     }
   },
+  head () {
+    return {
+      title: 'Sisir Ghimire Chettri'
+    }
+  },
   methods: {
     formatDate (date) {
       return new Date(date).toISOString().slice(0, 10)
     },
     onProfileImageLoad () {
       setTimeout(() => {
-        // this.$refs.imageProfile.classList.value += ' opacity-100'
         this.imageLoad = true
-      }, 2000)
+      }, 1000)
     }
   }
 }

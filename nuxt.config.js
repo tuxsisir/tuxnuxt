@@ -1,3 +1,8 @@
+import global from './utils/global'
+import getSiteMeta from './utils/getSiteMeta'
+
+const meta = getSiteMeta()
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
@@ -7,12 +12,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'tuxsisir | Sisir Ghimire Chettri',
+    titleTemplate: 'tuxsisir | %s',
     meta: [
+      ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Full Stack Developer' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'author', content: global.author },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { hid: 'og:site_name', name: 'og:site_name', content: global.siteName }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
