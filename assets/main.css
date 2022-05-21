@@ -91,19 +91,22 @@ svg:not(:root).svg-inline--fa {
     overflow: visible;
     vertical-align: -.125em;
 }
-.copyleft {
-  display:inline-block;
-  transform: rotate(180deg);
+.prose code::before, .prose code::after {
+  content: "";
 }
-
-.profile-image{
-  transition: opacity 300ms;
+.dark .dark\:prose-dark code {
+    color: #fff;
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: #343942;
+    border-radius: 6px;
 }
-
-.image {
-  opacity: 0;
-}
-
-.loaded {
-  opacity: 1;
+.prose code {
+    margin: 0;
+    padding: .2em .4em;
+    background-color: #eadecd;
+    border-radius: 6px;
+    font-weight: 400 !important;
+    font-size: 85% !important;
 }
