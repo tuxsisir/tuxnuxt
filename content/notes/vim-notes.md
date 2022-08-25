@@ -5,6 +5,11 @@ draft: false
 tags: ["vim"]
 ---
 
+
+### Netrw
+
+- `gn` to show current dir
+
 ### Telescope
 
 Add to quickfix list
