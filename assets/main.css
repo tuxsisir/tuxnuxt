@@ -99,13 +99,11 @@ svg:not(:root).svg-inline--fa {
     padding: .2em .4em;
     margin: 0;
     font-size: 85%;
-    background-color: #343942;
     border-radius: 6px;
 }
 .prose code {
     margin: 0;
     padding: .2em .4em;
-    background-color: #eadecd;
     border-radius: 6px;
     font-weight: 400 !important;
     font-size: 85% !important;
